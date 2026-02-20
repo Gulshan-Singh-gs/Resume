@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulshan Singh - Resume</title>
+    <style>
+        /* CSS RESET & VARIABLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-bg: #0d1b2a; /* Dark blue sidebar */
+            --secondary-bg: #ffffff; /* White main area */
+            --text-light: #e0e1dd;
+            --text-dark: #1b263b;
+            --highlight: #778da9;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: var(--text-dark);
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* MAIN CONTAINER */
+        .resume-container {
+            display: flex;
+            width: 100%;
+            max-width: 900px;
+            background-color: var(--secondary-bg);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* LEFT SIDEBAR */
+        .left-col {
+            width: 35%;
+            background-color: var(--primary-bg);
+            color: var(--text-light);
+            padding: 40px 30px;
+        }
+
+        .profile-pic-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Replace 'profile.jpg' with your actual image path */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--highlight);
+        }
+
+        .name-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .name-title h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .name-title h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--highlight);
+        }
+
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+
+        .sidebar-section h2 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--highlight);
+            padding-bottom: 5px;
+            color: #fff;
+        }
+
+        .sidebar-item {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .sidebar-item p {
+            margin-bottom: 3px;
+        }
+
+        .sidebar-item a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        /* SKILL BARS */
+        .skill {
+            margin-bottom: 12px;
+        }
+        
+        .skill-name {
+            font-size: 0.85rem;
+            margin-bottom: 4px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            height: 4px;
+            border-radius: 2px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: #fff;
+            border-radius: 2px;
+        }
+
+        /* RIGHT MAIN COLUMN */
+        .right-col {
+            width: 65%;
+            padding: 40px 40px;
+        }
+
+        .main-section {
+            margin-bottom: 25px;
+        }
+
+        .main-section h2 {
+            font-size: 1.3rem;
+            color: var(--primary-bg);
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        .main-section h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .main-section p, .main-section ul {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+
+        .main-section ul {
+            padding-left: 20px;
+        }
+
+        .main-section li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info-inline span {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .resume-container {
+                flex-direction: column;
+            }
+            .left-col, .right-col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    
+    <aside class="left-col">
+        
+        <div class="profile-pic-container">
+            <img src="your-image.jpg" alt="Gulshan Singh" class="profile-pic">
+        </div>
+
+        <div class="name-title">
+            <h1>Gulshan Singh</h1>
+            <h3>Software Engineer</h3>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Details</h2>
+            <div class="sidebar-item">
+                <p>Rupnagar, Punjab</p>
+                <p>Rupnagar 140001</p>
+                <p>India</p>
+                <p><a href="tel:+919530580660">+91 9530580660</a></p>
+                <p><a href="mailto:gulshanbaudh0606@gmail.com">gulshanbaudh0606@gmail.com</a></p>
+            </div>
+            <div class="sidebar-item">
+                <p><strong>NATIONALITY</strong></p>
+                <p>Indian</p>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Skills</h2>
+            
+            <div class="skill">
+                <div class="skill-name">Java & Data Structures (DSA)</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+            
+            <div class="skill">
+                <div class="skill-name">Google Cloud Services</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 50%;"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Software Testing</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Endurance</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Strength & Conditioning</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Tactical Discipline</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Financial Literacy</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Content Creation</div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h2>Hobbies</h2>
+            <div class="sidebar-item">
+                <p>Cycling</p>
+                <p>Combat Sports</p>
+                <p>Calisthenics</p>
+            </div>
+        </div>
+    </aside>
+
+    <main class="right-col">
+        
+        <section class="main-section">
+            <h2>Profile</h2>
+            <p>Proficient in various platforms, languages, and embedded systems. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.</p>
+        </section>
+
+        <section class="main-section">
+            <h2>Curriculum Vitae</h2>
+            <h3>GULSHAN SINGH</h3>
+            <p><strong>Location:</strong> Punjab, India | <strong>Email:</strong> gulshanbaudh0606@gmail.com | <strong>Phone:</strong> +91 9530580660</p>
+            <p><strong>LinkedIn:</strong> <a href="#">https://www.linkedin.com/in/gulshan-singh-01b236261</a></p>
+            <p><strong>GitHub:</strong> <a href="#">https://github.com/Gulshan-Singh-gs</a></p>
+        </section>
+
+        <section class="main-section">
+            <h2>Summary</h2>
+            <p>Second-year B.Tech Computer Science Engineering student with a strong foundation in Java, Data Structures, and Software Testing. Combines rigorous technical training with the operational discipline of an NCC Cadet. Focused on executing high-efficiency software solutions and building scalable projects.</p>
+        </section>
+
+        <section class="main-section">
+            <h2>EDUCATION</h2>
+            <h3>Rayat Bahra University | Kharar, Punjab</h3>
+            <p><em>B.Tech in Computer Science Engineering (CSE)</em></p>
+            <ul>
+                <li>Expected Graduation: 2028</li>
+                <li>Core Coursework: Java, Data Structures, Data Communication and Computer Networks (DCCN), Programming in C, C++.</li>
+            </ul>
+        </section>
+
+        <section class="main-section">
+            <h2>CERTIFICATIONS & CONTINUOUS LEARNING</h2>
+            <ul>
+                <li><strong>AI-Integrated Management of NEXT-GEN Software Testing</strong> – IIM Bangalore</li>
+                <li><strong>Google Cloud Architecture & Services</strong> – Self-directed learning roadmap</li>
+                <li><strong>Social Psychology</strong> – SWAYAM</li>
+            </ul>
+        </section>
+
+        <section class="main-section">
+            <h2>TECHNICAL SKILLS</h2>
+            <ul>
+                <li><strong>Languages:</strong> Java, C++, C</li>
+                <li><strong>Concepts:</strong> Data Structures & Algorithms, Computer Networks, Software Testing, Google Cloud Services</li>
+                <li><strong>Soft Skills:</strong> Operational Discipline, Leadership, Analytical Problem Solving, Integrity</li>
+            </ul>
+        </section>
+
+        <section class="main-section">
+            <h2>PROJECTS IN DEVELOPMENT</h2>
+            <h3>AI Influencer Persona Platform</h3>
+            <ul>
+                <li>Developing a conceptual framework and backend logic for an AI-driven digital persona.</li>
+                <li>Integrating multi-disciplinary character attributes into a cohesive, interactive model.</li>
+            </ul>
+        </section>
+
+        <section class="main-section">
+            <h2>LEADERSHIP & EXTRACURRICULAR</h2>
+            <h3>National Cadet Corps (NCC) – Cadet</h3>
+            <ul>
+                <li>NCC 'B' Certificate Candidate</li>
+                <li>Annual Training Camp (ATC)</li>
+                <li>Endurance Training</li>
+            </ul>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
