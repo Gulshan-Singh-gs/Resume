@@ -104,6 +104,10 @@
             color: var(--text-light);
             text-decoration: none;
         }
+        .a:link, a:visited, a:hover, a:active {
+            color: black;
+            text-decoration: none;  
+        }
 
         /* SKILL BARS */
         .skill {
@@ -187,7 +191,7 @@
     <aside class="left-col">
         
         <div class="profile-pic-container">
-            <img src="your-image.jpg" alt="Gulshan Singh" class="profile-pic">
+            <img src="https://github.com/Gulshan-Singh-gs/Resume/blob/main/Resume.png" alt="Gulshan Singh" class="profile-pic">
         </div>
 
         <div class="name-title">
