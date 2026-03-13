@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulshan Singh | Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            color: #111827;
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 850px;
+            padding: 40px 50px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #1f2937;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #111827;
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: #4b5563;
+        }
+
+        .contact-info span {
+            margin: 0 8px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #111827;
+            border-bottom: 1px solid #d1d5db;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        p, li {
+            font-size: 13px;
+            color: #374151;
+        }
+
+        .objective {
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px 20px;
+            list-style-type: none;
+        }
+
+        .skills-grid li::before {
+            content: "•";
+            color: #111827;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .skills-grid li {
+            padding-left: 1em;
+        }
+
+        .project-item, .education-item {
+            margin-bottom: 12px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #111827;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            font-size: 13px;
+            color: #4b5563;
+        }
+
+        .item-date {
+            font-size: 13px;
+            font-weight: 500;
+            color: #4b5563;
+        }
+
+        ul.bullet-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        ul.bullet-list li {
+            margin-bottom: 4px;
+        }
+
+        /* Print Optimization */
+        @media print {
+            body {
+                background-color: #ffffff;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <header>
+            <h1>Gulshan Singh</h1>
+            <div class="contact-info">
+                gulshanbaudh0606@gmail.com <span>|</span> 
+                https://www.linkedin.com/in/gulshansinghse  <span>|</span> 
+                +91 9530580660 <span>|</span> 
+                Punjab, India
+            </div>
+        </header>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p class="objective">
+                Aspiring Software Engineer with a relentless drive for efficiency and a strong foundation in modern architectures. Proficient in Python and Advanced Java, with hands-on experience in forging autonomous systems and full-stack applications. Seeking opportunities to apply technical execution, optimize backend logic, and contribute to high-performance engineering operations.
+            </p>
+        </section>
+
+        <section>
+            <h2>Core Competencies</h2>
+            <ul class="skills-grid">
+                <li>Programming: Python, Advanced Java, C++</li>
+                <li>Frontend: React, Vite, HTML/CSS/Tailwind</li>
+                <li>Backend: FastAPI, RESTful APIs</li>
+                <li>Database: SQLite, SQL Server Management</li>
+                <li>Tools: Git, GitHub Actions, LM Studio</li>
+                <li>Systems: Local LLM Integration, WebRTC</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">Aurora Vane: Autonomous AI Interface</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <ul class="bullet-list">
+                    <li>Engineered a full-stack, real-time AI dashboard using React, Vite, and Tailwind CSS for a high-performance visual interface.</li>
+                    <li>Constructed a secure Python/FastAPI bridge to route front-end requests to local Llama-3 and cloud-based Groq LLM engines.</li>
+                    <li>Integrated SQLite for long-term semantic memory and utilized Web3Forms for secure, serverless feedback pipelines.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <span class="item-title">NewsKernal Platform</span>
+                    <span class="item-date">Completed</span>
+                </div>
+                <ul class="bullet-list">
+                    <li>Developed a Python-based content aggregation platform to process and serve informational data.</li>
+                    <li>Focused on clean data architecture and automated execution for backend reliability.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Educational Qualifications</h2>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <span class="item-title">Bachelor of Technology (Computer Science and Engineering)</span>
+                    <span class="item-date">Expected 2028</span>
+                </div>
+                <div class="item-subtitle">Rayat Bahra University, Punjab</div>
+                <ul class="bullet-list">
+                    <li>Core focus on Advanced Java, Data Structures, and Software Engineering principles.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications & Achievements</h2>
+            <ul class="bullet-list">
+                <li><strong>National Cadet Corps (NCC):</strong> Successfully completed the 'B' Certificate examination (Feb 2026), demonstrating rigorous physical discipline, leadership, and operational readiness.</li>
+                <li><strong>Physical Conditioning:</strong> Execute rigorous calisthenics/weight training protocols, reflecting a high threshold for consistency and mental endurance.</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
